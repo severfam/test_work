@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+	<title>Fictitious</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>		
+	<div class="debug">
+		<div>
+			<div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+	
+	<section class="upsection">
+		
+				<div class="container">
+						<div class="up">
+							<div class="up__city">
+								Ваш город:
+								<span>Ижевск</span>
+								<i class="fa fa-caret-down"></i>
+							</div>
+							<div class="up__delivery">Бесплатная доставка в город Ижевск при заказе от 1000 руб.</div>
+							<div class="up__phone">+7 (0000) 00-00-00</div>
+							<div class="up__callMe">
+								<span class="border-bottom-dashed">Обратный звонок</span>                           
+							</div>
+							<div class="up__close">
+								<a href="#" onclick="btnClose()"><span ><i class="fas fa-times"></i></span></a>
+							</div>
+						</div>
+					</div>
+		
+	</section>
+	
+	<section class="headermenu">
+		<div class="wrapper">
+			<div class="mainmenu">
+									
+				<div class="mainmenu__top">
+					<div class="burger">
+						<ul class="topnav1" >
+							<li class="icon" id="icon">
+								<a href="#" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+							</li>
+						</ul>
+						<ul class="topnav1">
+							<li class="back" id="back">           
+								<div style="display: flex; justify-content: space-between; align-items: center;">
+									<div>
+										<a href="#" onclick="btnBackFunction(this)" data-value="" id="aArrowBack"><span><i class="fa fa-angle-left"></i></span></a>
+									</div>
+									<div>
+										<a href="#" onclick="btnBackFunction(this)" data-value="" id="aBack"><span id="spanBack">Все товары</span></a>
+									</div>
+									<div>
+										<a href="#" onclick="btnClose()"><span ><i class="fas fa-times"></i></span></a>
+									</div>
+								</div>            
+							</li>
+						</ul>
+					</div>
+					<div class="mainmenu__logo">
+						<img src="img/logo.png" alt="Логотип">
+					</div>
+					<div class="mainmenu__search">
+							<div class="info">
+									<span class="info__item">Адреса магазинов</span>
+									<span class="info__item">Доставка и сборка</span>
+									<span class="info__item">Оплата</span>
+									<span class="info__item">Консультант</span>
+									<span class="info__item">Информация</span>
+									<span class="info__item">О компании</span>
+									<span class="info__item">Контакты</span>
+							</div>
+							<div class="search">
+									<div class="search__text">
+										<input type="text" placeholder="Поиск по каталогу">
+									</div>                           
+									<div class="search__icon">
+										<button type="submit">
+											<i class="fas fa-search"></i>
+										</button>
+									</div>
+																	
+							</div>							
+					</div>
+					<div class="mainmenu__basket">
+                        <img src="img/shopping-bag.png" alt="">
+						<div class="amount">0</div>
+                    </div>
+				</div>
+				
+				<div class="menu">
+					<ul class="topnav" id="myTopnav">
+						<li class="dropdown">
+							<a href="javascript:void(0)" class="dropbtn" onclick="subMenuFn(this)" data-value="2">
+								Все товары
+								<span class="arrow">
+									<i class="fas fa-chevron-right"></i>
+								</span>
+							</a>
+							
+							<div class="dropdown-content" id="myDropdown">
+								<div class="submenuWraper">
+									<div>
+										<a href="#">Кухни
+										<ul class="submenu">
+											<li>Готовые кухонные гарнитуры</li>
+											<li>Встраиваемая техника</li>
+										</ul> 
+										</a>
+									</div>
+									<div><a href="#">Стулья</a></div>
+									<div><a href="#">Столы
+										<ul class="submenu">
+											<li>Письменные</li>
+											<li>Компьютерные</li>
+											<li>Журнальные</li>
+											<li>Обеденные</li>
+											<li>Рабочие</li> 
+										</ul>
+									</a></div>
+									<div><a href="#">Корпусная мебель
+										<ul class="submenu">
+											<li>Шкафы</li>
+											<li>Стеллажи</li>
+											<li>Полки</li>
+											<li>Комоды</li>
+											<li>Зеркала</li>
+											<li>Вешалки</li>
+											<li>Трюмо</li>
+											<li>Стенки-горки</li>
+											<li>Тумбы</li>
+										</ul>
+									</a></div>
+									<div><a href="#">Мягкая мебель
+										<ul class="submenu">
+											<li>Кресла</li>
+											<li>Банкетки</li>
+											<li>Пуфы</li>
+											<li>Матрасы</li>
+											<li>Кровати</li>
+											<li>Диваны</li>
+											<li>Кресла-кровати</li>                                    
+										</ul>
+									</a></div>
+									<div><a href="#">Детские комплексы</a></div>
+									<div><a href="#">Модульные наборы</a></div>
+								</div>
+							</div>
+							
+						</li>
+						<li>
+							<a href="#news">Кухни и столовые<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						</li>
+						<li>
+							<a href="#contact">Гостиные<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						</li>
+						<li>
+							<a href="#bedroom">Спальни<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						</li>
+						<li><a href="#">Прихожие<span class="arrow"><i class="fas fa-chevron-right"></i></span></a></li>
+						<li><a href="#">Детские<span class="arrow"><i class="fas fa-chevron-right"></i></span></a></li>
+						<li><a href="#">Офис<span class="arrow"><i class="fas fa-chevron-right"></i></span></a></li>
+						<li><a href="#">Акции<span class="arrow"><i class="fas fa-chevron-right"></i></span></a></li>
+						<li class="nero"><a href="#">О компании<span class="arrow"><i class="fas fa-chevron-right"></i></span></a></li>
+						<li class="nero"><a href="#">Доставка и сборка<span class="arrow"><i class="fas fa-chevron-right"></i></span></a></li>
+						<li class="nero"><a href="#">Оплата<span class="arrow"><i class="fas fa-chevron-right"></i></span></a></li>
+						<li class="nero"><a href="#">Отзывы и предложения<span class="arrow"><i class="fas fa-chevron-right"></i></span></a></li>
+					</ul>
+					<!--Меню "все товары" -->
+					<div class="dropdown-content dropdown dropdown-2"  id="myDropdown2">
+						<a href="javascript:void(0)" class="dropbtn1" onclick="subMenuFn(this)" data-value="3">Кухни<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Стулья<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="javascript:void(0)" class="dropbtn1" onclick="subMenuFn(this)" data-value="4">Столы<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="javascript:void(0)" class="dropbtn1" onclick="subMenuFn(this)" data-value="5">Корпусная мебель<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="javascript:void(0)" class="dropbtn1" onclick="subMenuFn(this)" data-value="6">Мягкая мебель<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Детские комплексы<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Модульные наборы<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>            
+					</div>
+					<!-- Меню "Кухни"-->
+					<div class="dropdown-content dropdown dropdown-3"  id="myDropdown3">
+						<a href="#">Готовые кухонные гарнитуры<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Сантехника для кухни<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Встраиваемая техника<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+					</div>
+					
+					<!--Меню "Столы"--> 
+					<div class="dropdown-content dropdown dropdown-4"  id="myDropdown4">
+						<a href="#">Письменные<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Компьютерные<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Журнальные<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Обеденные<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Рабочие<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+					</div>
+					
+					<!--Меню "Корпусная мебель" -->
+					<div class="dropdown-content dropdown dropdown-5"  id="myDropdown5">
+						<a href="#">Шкафы<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Стеллажи<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Полки<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Комоды<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Зеркала<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Вешалки<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Трюмо<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Стенки-горки<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Тумбы<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+					</div>
+					<!--Меню "Мягкая мебель"  -->
+					<div class="dropdown-content dropdown dropdown-6"  id="myDropdown6">
+						<a href="#">Кресла<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Банкетки<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Пуфы<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Матрасы<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Кроватки<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Диваны<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+						<a href="#">Кресла-кровати<span class="arrow"><i class="fas fa-chevron-right"></i></span></a>
+					</div>
+				   
+				</div>
+			</div>	
+		</div>
+		<!--Popup-->
+		<div class="modal"></div>
+        <div class="overlay"></div>
+        <div class="for-city-popup">
+            <form class="city-popup">
+                <span>Ваш город <span id="city">Ижевск</span>?</span><br>
+                <div class="button no">Нет</div>
+                <div class="button yes">Да</div> 
+                <div class="closePopup">
+                	<i class="fas fa-times"></i>
+                </div>                   
+            </form>
+        </div>
+        <div class="for-cityChoice-popup">
+            <form class="cityChoice-popup">
+                <span class="title">Где вы находитесь?</span><br>
+                <span class="subtitle">
+                    Если вашего города нет в списке, выберите город <b>Ижевск</b>
+                </span>
+                <input type="search" placeholder="Введите Ваш город" size="50" id="citySearch">
+                <div>
+                     <ul>
+                        <li>Москва</li>
+                        <li>Санкт-Петербург</li>
+                        <li>Архангельск</li>
+                        <li>Владивосток</li>
+                    </ul>
+                    <ul>
+                        <li>Волгоград   </li>
+                        <li>Воронеж</li>
+                        <li>Екатеринбург</li>
+                        <li>Ижевск</li>
+                    </ul>
+                    <ul>
+                        <li>Иркутск</li>
+                        <li>Казань</li>
+                        <li>Кемерово</li>
+                        <li>Краснодар</li>
+                    </ul>
+                </div>
+                <div class="closePopup">
+                    <i class="fas fa-times"></i>
+                </div>
+            </form>
+		</div> 
+		<!--End of popup-->       
+	</section>
+	
+	<section class="banner">
+			<div class="banner">
+					<input type="radio" name="slider" id="slider_1" checked="checked">
+						<label for="slider_1"></label>
+						<label for="slider_4">&#x2039;</label>
+						<label for="slider_2">&#x203a;</label>
+					<input type="radio" name="slider" id="slider_2">
+						<label for="slider_2"></label>
+						<label for="slider_1">&#x2039;</label>
+						<label for="slider_3">&#x203a;</label>
+					<input type="radio" name="slider" id="slider_3">
+						<label for="slider_3"></label>
+						<label for="slider_2">&#x2039;</label>
+						<label for="slider_4">&#x203a;</label>
+					<input type="radio" name="slider" id="slider_4">
+						<label for="slider_4"></label>
+						<label for="slider_3">&#x2039;</label>
+						<label for="slider_1">&#x203a;</label>
+					<div class="banner__items">
+						<div>
+							<img src="img/slider_banner/layer1.png" alt="">
+						</div>
+						<div>
+							<img src="img/slider_banner/layer2.png" alt="">
+						</div>
+						<div>
+							<img src="img/slider_banner/layer3.png" alt="">
+						</div>
+						<div>
+							<img src="img/slider_banner/layer4.png" alt="">
+						</div>
+					</div>
+				</div>
+	</section>
+
+	<section class="hitsell">
+		<div class="wrapper">
+            <h2>Хиты продаж</h2>
+            <div class="products">
+                <div class="productItem">
+					<div class="focusItem">
+						<div class="focusItem__slider">
+							<section class="galary galary-1">
+								<div class="wrap">
+									<div class="slider">
+										<div class="scroller">
+											<ul class="items">
+												<li class="item">
+													<img src="img/products/product1_slider/1.png" alt="Картинка">
+												</li>
+												<li class="item">
+													<img src="img/products/product1_slider/2.png" alt="Картинка">
+												</li>
+												<li class="item">
+													<img src="img/products/product1_slider/3.png" alt="Картинка">
+												</li>												
+											</ul>
+										</div>
+										<button class="button_prev"><i class="fas fa-chevron-left"></i></button>
+										<button class="button_next"><i class="fas fa-chevron-right"></i></button>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="focusItem__footer focusItem__footer-1">						
+							<div class="focusItem__describe"><h2>Кухня &laquo;Лондон&raquo;</h2></div>
+							<div class="focusItem__factory">
+								<span>Производитель: Пенза</span>
+								<div class="focusItem__price">
+									<span class="strikethrough">14250 руб.</span>
+									<span class="price">15050 руб.</span>
+								</div>
+							</div>
+							<div class="focusItem__body">
+								<span class="text">Корпус: </span>
+								<span class="venge">Венге ЛДСП</span>
+								<div class="housing housing-active-1">
+									<img src="img/housings/housing1.png" alt="">
+									<img src="img/housings/housing2.png" alt="">
+								</div>	
+							</div>
+							<div class="focusItem__facade">
+								<span class="text">Фасад: </span>
+								<span class="shimono">Шимоно темный ЛДСП</span>
+								<div class="housing housing-active-2">
+									<img src="img/housings/housing3.png"  alt="">									
+								</div>
+							</div>
+							<div class="focusItem__button">
+								<span>Добавить в корзину</span>
+							</div>
+						</div>
+					</div>
+					<div class="productItem__img"><img src="img/products/product1.png" alt=""></div>
+					<div class="productItem__describe">
+						<div class="productItem__title"><h2>Кухня &laquo;Лондон&raquo;</h2></div>
+						<div class="productItem__factory"><span>Производитель: Пенза</span></div>
+						<div class="productItem__price"><span class="strikethrough">14250 руб.</span><span class="price">15050 руб.</span></div>
+					</div>
+                </div>
+                <div class="productItem">
+					<div class="focusItem">
+						<div class="focusItem__slider">
+							<section class="galary galary-2">
+								<div class="wrap">
+									<div class="slider">
+										<div class="scroller">
+											<ul class="items">
+												<li class="item">
+													<img src="img/products/product2_slider/1.png" alt="Картинка">
+												</li>
+												<li class="item">
+													<img src="img/products/product2_slider/2.png" alt="Картинка">
+												</li>
+												<li class="item">
+													<img src="img/products/product2_slider/3.png" alt="Картинка">
+												</li>											
+											</ul>
+										</div>
+										<button class="button_prev"><i class="fas fa-chevron-left"></i></button>
+										<button class="button_next"><i class="fas fa-chevron-right"></i></button>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="focusItem__footer focusItem__footer-2">						
+							<div class="focusItem__describe"><h2>Кухня &laquo;Лондон&raquo;</h2></div>
+							<div class="focusItem__factory">
+								<span>Производитель: Пенза</span>
+								<div class="focusItem__price">
+									<span class="strikethrough">14250 руб.</span>
+									<span class="price">15050 руб.</span>
+								</div>
+							</div>
+							<div class="focusItem__body">
+								<span class="text">Корпус: </span>
+								<span class="venge">Венге ЛДСП</span>
+								<div class="housing housing-active-1">
+									<img src="img/housings/housing1.png" alt="">
+									<img src="img/housings/housing2.png" alt="">
+								</div>	
+							</div>
+							<div class="focusItem__facade">
+								<span class="text">Фасад: </span>
+								<span class="shimono">Шимоно темный ЛДСП</span>
+								<div class="housing housing-active-2">
+									<img src="img/housings/housing3.png"  alt="">									
+								</div>
+							</div>
+							<div class="focusItem__button">
+								<span>Добавить в корзину</span>
+							</div>
+						</div>
+					</div>
+					<div class="productItem__img"><img src="img/products/product2.png" alt=""></div>
+					<div class="productItem__describe">
+						<div class="productItem__title"><h2>Кухня &laquo;Лондон&raquo;</h2></div>
+						<div class="productItem__factory"><span>Производитель: Пенза</span></div>
+						<div class="productItem__price"><span class="strikethrough">14250 руб.</span><span class="price">15050 руб.</span></div>
+					</div>
+                </div>
+                <div class="productItem">
+					<div class="focusItem">
+						<div class="focusItem__slider">
+							<section class="galary galary-3">
+								<div class="wrap">
+									<div class="slider">
+										<div class="scroller">
+											<ul class="items">
+												<li class="item">
+													<img src="img/products/product3_slider/1.png" alt="Картинка">
+												</li>
+												<li class="item">
+													<img src="img/products/product3_slider/2.png" alt="Картинка">
+												</li>
+												<li class="item">
+													<img src="img/products/product3_slider/3.png" alt="Картинка">
+												</li>												
+											</ul>
+										</div>
+										<button class="button_prev"><i class="fas fa-chevron-left"></i></button>
+										<button class="button_next"><i class="fas fa-chevron-right"></i></button>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="focusItem__footer focusItem__footer-3">						
+							<div class="focusItem__describe"><h2>Кухня &laquo;Лондон&raquo;</h2></div>
+							<div class="focusItem__factory">
+								<span>Производитель: Пенза</span>
+								<div class="focusItem__price">
+									<span class="strikethrough">14250 руб.</span>
+									<span class="price">15050 руб.</span>
+								</div>
+							</div>
+							<div class="focusItem__body">
+								<span class="text">Корпус: </span>
+								<span class="venge">Венге ЛДСП</span>
+								<div class="housing housing-active-1">
+									<img src="img/housings/housing1.png" alt="">
+									<img src="img/housings/housing2.png" alt="">
+								</div>	
+							</div>
+							<div class="focusItem__facade">
+								<span class="text">Фасад: </span>
+								<span class="shimono">Шимоно темный ЛДСП</span>
+								<div class="housing housing-active-2">
+									<img src="img/housings/housing3.png"  alt="">									
+								</div>
+							</div>
+							<div class="focusItem__button">
+								<span>Добавить в корзину</span>
+							</div>
+						</div>
+					</div>
+					<div class="productItem__img"><img src="img/products/product3.png" alt=""></div>
+					<div class="productItem__describe">
+						<div class="productItem__title"><h2>Кухня &laquo;Лондон&raquo;</h2></div>
+						<div class="productItem__factory"><span>Производитель: Пенза</span></div>
+						<div class="productItem__price"><span class="strikethrough">14250 руб.</span><span class="price">15050 руб.</span></div>
+					</div>
+                </div>
+                <div class="productItem productItem-4">
+					<div class="focusItem">
+						<div class="focusItem__slider">
+							<section class="galary galary-4">
+								<div class="wrap">
+									<div class="slider">
+										<div class="scroller">
+											<ul class="items">
+												<li class="item">
+													<img src="img/products/product4_slider/1.png" alt="Картинка">
+												</li>
+												<li class="item">
+													<img src="img/products/product4_slider/2.png" alt="Картинка">
+												</li>
+												<li class="item">
+													<img src="img/products/product4_slider/3.png" alt="Картинка">
+												</li>												
+											</ul>
+										</div>
+										<button class="button_prev"><i class="fas fa-chevron-left"></i></button>
+										<button class="button_next"><i class="fas fa-chevron-right"></i></button>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="focusItem__footer focusItem__footer-4">						
+							<div class="focusItem__describe"><h2>Кухня &laquo;Лондон&raquo;</h2></div>
+							<div class="focusItem__factory">
+								<span>Производитель: Пенза</span>
+								<div class="focusItem__price">
+									<span class="strikethrough">14250 руб.</span>
+									<span class="price">15050 руб.</span>
+								</div>
+							</div>
+							<div class="focusItem__body">
+								<span class="text">Корпус: </span>
+								<span class="venge">Венге ЛДСП</span>
+								<div class="housing housing-active-1">
+									<img src="img/housings/housing1.png" alt="">
+									<img src="img/housings/housing2.png" alt="">
+								</div>	
+							</div>
+							<div class="focusItem__facade">
+								<span class="text">Фасад: </span>
+								<span class="shimono">Шимоно темный ЛДСП</span>
+								<div class="housing housing-active-2">
+									<img src="img/housings/housing3.png"  alt="">									
+								</div>
+							</div>
+							<div class="focusItem__button">
+								<span>Добавить в корзину</span>
+							</div>
+						</div>
+					</div>
+					<div class="productItem__img"><img src="img/products/product4.png" alt=""></div>
+					<div class="productItem__describe">
+						<div class="productItem__title"><h2>Кухня &laquo;Лондон&raquo;</h2></div>
+						<div class="productItem__factory"><span>Производитель: Пенза</span></div>
+						<div class="productItem__price"><span class="strikethrough">14250 руб.</span><span class="price">15050 руб.</span></div>
+					</div>
+                </div>
+                <div class="productItem productItem-5">
+					<div class="focusItem">
+						<div class="focusItem__slider">
+							<section class="galary galary-5">
+								<div class="wrap">
+									<div class="slider">
+										<div class="scroller">
+											<ul class="items">
+												<li class="item">
+													<img src="img/products/product5_slider/1.png" alt="Картинка">
+												</li>
+												<li class="item">
+													<img src="img/products/product5_slider/2.png" alt="Картинка">
+												</li>
+												<li class="item">
+													<img src="img/products/product5_slider/3.png" alt="Картинка">
+												</li>											
+											</ul>
+										</div>
+										<button class="button_prev"><i class="fas fa-chevron-left"></i></button>
+										<button class="button_next"><i class="fas fa-chevron-right"></i></button>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="focusItem__footer focusItem__footer-5">						
+							<div class="focusItem__describe"><h2>Кухня &laquo;Лондон&raquo;</h2></div>
+							<div class="focusItem__factory">
+								<span>Производитель: Пенза</span>
+								<div class="focusItem__price">
+									<span class="strikethrough">14250 руб.</span>
+									<span class="price">15050 руб.</span>
+								</div>
+							</div>
+							<div class="focusItem__body">
+								<span class="text">Корпус: </span>
+								<span class="venge">Венге ЛДСП</span>
+								<div class="housing housing-active-1">
+									<img src="img/housings/housing1.png" alt="">
+									<img src="img/housings/housing2.png" alt="">
+								</div>	
+							</div>
+							<div class="focusItem__facade">
+								<span class="text">Фасад: </span>
+								<span class="shimono">Шимоно темный ЛДСП</span>
+								<div class="housing housing-active-2">
+									<img src="img/housings/housing3.png"  alt="">									
+								</div>
+							</div>
+							<div class="focusItem__button">
+								<span>Добавить в корзину</span>
+							</div>
+						</div>
+					</div>
+					<div class="productItem__img"><img src="img/products/product5.png" alt=""></div>
+					<div class="productItem__describe">
+						<div class="productItem__title"><h2>Кухня &laquo;Лондон&raquo;</h2></div>
+						<div class="productItem__factory"><span>Производитель: Пенза</span></div>
+						<div class="productItem__price"><span class="strikethrough">14250 руб.</span><span class="price">15050 руб.</span></div>
+					</div>
+                </div>
+                <div class="productItem productItem-6">
+					<div class="focusItem">
+						<div class="focusItem__slider">
+							<section class="galary galary-6">
+								<div class="wrap">
+									<div class="slider">
+										<div class="scroller">
+											<ul class="items">
+												<li class="item">
+													<img src="img/products/product6_slider/1.png" alt="Картинка">
+												</li>
+												<li class="item">
+													<img src="img/products/product6_slider/2.png" alt="Картинка">
+												</li>
+												<li class="item">
+													<img src="img/products/product6_slider/3.png" alt="Картинка">
+												</li>											
+											</ul>
+										</div>
+										<button class="button_prev"><i class="fas fa-chevron-left"></i></button>
+										<button class="button_next"><i class="fas fa-chevron-right"></i></button>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="focusItem__footer focusItem__footer-6">						
+							<div class="focusItem__describe"><h2>Кухня &laquo;Лондон&raquo;</h2></div>
+							<div class="focusItem__factory">
+								<span>Производитель: Пенза</span>
+								<div class="focusItem__price">
+									<span class="strikethrough">14250 руб.</span>
+									<span class="price">15050 руб.</span>
+								</div>
+							</div>
+							<div class="focusItem__body">
+								<span class="text">Корпус: </span>
+								<span class="venge">Венге ЛДСП</span>
+								<div class="housing housing-active-1">
+									<img src="img/housings/housing1.png" alt="">
+									<img src="img/housings/housing2.png" alt="">
+								</div>	
+							</div>
+							<div class="focusItem__facade">
+								<span class="text">Фасад: </span>
+								<span class="shimono">Шимоно темный ЛДСП</span>
+								<div class="housing housing-active-2">
+									<img src="img/housings/housing3.png"  alt="">									
+								</div>
+							</div>
+							<div class="focusItem__button">
+								<span>Добавить в корзину</span>
+							</div>
+						</div>
+					</div>
+					<div class="productItem__img"><img src="img/products/product6.png" alt=""></div>
+					<div class="productItem__describe">
+						<div class="productItem__title"><h2>Кухня &laquo;Лондон&raquo;</h2></div>
+						<div class="productItem__factory"><span>Производитель: Пенза</span></div>
+						<div class="productItem__price"><span class="strikethrough">14250 руб.</span><span class="price">15050 руб.</span></div>
+					</div>
+                </div>
+            </div>
+			<div class="allhits">
+				<div class="button"><h2> Все хиты продаж</h2></div>
+			</div>
+           
+        </div>
+	</section>
+	<section class="furniture">
+		<div class="wrapper">
+			<h2>Мебель российских фабрик с бесплатной доставкой</h2>
+			<div class="items">
+				<div class="item">
+					<div class="circle">
+						<img src="img/block_text_1.png" alt="Мебель">
+					</div>
+					<div class="subtitle">Возможностью сделать заказ в шоу-руме	в Ижевске</div>
+					<div class="text">
+						Знаете, как получить удовольствие от покупки мебели в Интернете? Найти продавца, которому можно доверять. С 2008 года компания «Гудвик» продаёт в Ижевске мебель российских фабрик. Мы уверены в продукции, которую предлагаем, а покупатели уверены в нас.
+					</div>
+				</div>
+				<div class="item">
+					<div class="circle">
+						<img src="img/block_text_2.png" alt="Мебель">
+					</div>
+					<div class="subtitle">Выбирайте хорошую мебель</div>
+					<div class="text">
+						В <span>каталоге интернет-магазина</span> мебели в Ижевске представлена продукция российских фабрик «Риннер», «Мебельсон», «Интерьер-Центр», «Ивару», «Аквилон». Здесь вы найдёте шкафы-купе, стеллажи и полки, стулья и столы, комоды, трюмо и обувные шкафы, кровати и мебельные стенки, мягкую мебель. Мы продаём изделия из массива, ЛДСП и МДФ. Предлагаем мебель с бюджетной фурнитурой и более дорогие варианты с шариковыми направляющими.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="reviews">
+		<div class="wrapper">
+			<div class="items">
+				<div class="item1">
+					<div class="item1-1"> 
+						<div>
+							<h2>Отзывы о нас</h2>
+						</div>
+						<div>
+							<span>Все отзывы</span>
+						</div>
+					</div>
+					<div class="gallery">
+						<div class="comments">
+							<div class="comment showed">
+								<div class="text">Заказали модульную кухню, все привезли, все понравилось. Хороший ассортимент и большой выбор. Спасибо. Рекомендую)))
+								</div>
+								<div class="author">07.03.2017 Лилия, Ижевск</div>
+							</div>
+							<div class="comment">
+								<div class="text">Отзыв номер 2</div>
+								<div class="author">11.12.1913 НейромонахФеофан, Нашествие</div>
+							</div>
+							<div class="comment">
+								<div class="text">Отзыв номер 3</div>
+								<div class="author">01.03.2018 Андрей, Москва</div>
+							</div>
+							<div class="comment">
+								<div class="text">Отзыв номер 4</div>
+								<div class="author">31.02.2099 Космос, Улан-Удэ</div>
+							</div>
+							<div class="comment">
+								<div class="text">Отзыв номер 5</div>
+								<div class="author">32.12.2000 Атас, Воткинск</div>
+							</div>
+						</div>
+					</div>
+					<div class="buttons">
+						<div class="prev"><i class="fas fa-chevron-left"></i></div>
+						<div class="next"><i class="fas fa-chevron-right"></i></div>
+					</div>
+				</div>
+				<div  class="item2">
+					<div>
+						<img src="img/diploma.png" alt="Диплом">
+						<img src="img/letter_of_thanks.png" alt="Благодарственное письмо">						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="howToWork">
+		<div class="wrapper">
+			<h2>Как мы работаем</h2>
+			<div class="items">
+				<div class="item">
+					<img src="img/application.png" alt="Заявка">
+					<div class="subtitle">Заявка</div>
+					<div class="text">Принимаем заказы 24/7.
+							Перезваниваем в течение 10 минут
+							в рабочее время с 9:00 до 20:00
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/pay.png" alt="Оплата">
+					<div class="subtitle">Оплата</div>
+					<div class="text">Оплату принимаем на сайте,
+							на р/с, наличными курьеру или
+							в магазине «Ижевская мебель».
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/delivery.png" alt="Доставка">
+					<div class="subtitle">Доставка</div>
+					<div class="text">Доставка два раза в неделю (вт, чт).
+							Если товар в наличии, то вы получаете его в течение 4 дней.
+					</div>
+				</div>	
+				<div class="item">
+					<img src="img/garant.png" alt="Гарантия">
+					<div class="subtitle">Гарантия</div>
+					<div class="text">Гарантия от 12 до 18 месяцев.
+							Если мебель не подошла, оформляем возврат в течение 7 дней.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="reasons">
+		<div class="wrapper">
+			<h2>6 причин купить мебель в «FICTITIOUS»</h2>
+			<div class="items">
+				<div class="item">
+					<img src="img/free_delivery.png" alt="Бесплатная доставка">
+					<div class="subtitle">Бесплатная доставка</div>
+					<div class="text">В черте города доставка до подъезда
+							бесплатна при любой сумме заказа
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/city.png" alt="Шоу-рум и склад в Ижевске">
+					<div class="subtitle">Шоу-рум и склад в Ижевске</div>
+					<div class="text">Оценивайте качество в магазине
+							«Ижевская мебель» на ул. Пойма, 7
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/loader.png" alt="Грузчики не подводят">
+					<div class="subtitle">Грузчики не подводят</div>
+					<div class="text">Напоминаем о доставке за день
+							и за час до назначенного времени
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/regulations.png" alt="Все по правилам">
+					<div class="subtitle">Все по правилам</div>
+					<div class="text">Вы получаете гарантийный талон,
+							товарный и кассовый чеки
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/credit.png" alt="Можно в кредит">
+					<div class="subtitle">Можно в кредит</div>
+					<div class="text">Кредит предоставляет ОТП-банк,
+							«Альфа-банк», банк «Русский Стандарт».
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/economy.png" alt="Экономия">
+					<div class="subtitle">Экономия</div>
+					<div class="text">Акции и распродажи каждый месяц.
+							Скидки 10%, 20%, 30% смотрите
+							в разделе «Акции»
+					</div>
+				</div>
+			</div>
+			<h2>Ищут везде – покупают в <span class="a">«FICTITIOUS»</span><span class="b">«Гудвик»</span></h2>
+			<p>Мы предлагаем доступную мебель фабричного производства и делаем всё,<br>
+					чтобы вы получили заказ без задержек.<br>
+					Чтобы купить мебель в интернет-магазине «FICTITIOUS», оформите заказ по телефону<br>
+					+7 (0000) 00-00-00 </p>
+		</div>
+	</section>
+	<section class="footer">
+		<div class="wrapper">
+			<div class="items">
+				<div class="item item-1">
+					<h2>Компания</h2>
+					<ul>
+						<li>О компании</li>
+						<li>Производители</li>
+						<li>Реквизиты</li>
+						<li>Условия возврата</li>
+						<li>Сотрудничество</li>
+					</ul>
+				</div>
+				<div class="item item-2">
+					<h2>Интернет-магазин</h2>
+					<ul>
+						<li>Доставка и сборка</li>
+						<li>Оплата</li>
+						<li>Акции</li>
+						<li>Отзывы и предложения</li>
+					</ul>
+				</div>
+				<div class="item">
+					<h2>Контакты</h2>
+					<div class="text">г.Ижевск, ул. Пойма, 7<br>ТЦ "Дом", комната 2<br>+7(0000)00-00-00<br>mebel@ficlitios.ru</div>
+				</div>
+				<div class="item">
+					<h2>Мы принимаем к оплате</h2>
+					<div>
+					<img src="img/yandexkassa.png" alt="ЯндекКасса">
+					<img src="img/visa.png" alt="Visa">
+					<img src="img/mastercard.png" alt="MasterCard"></div>
+				</div>
+				
+				<div class="text1">  
+					<div class="text1-2">© 2017, «FICTITIOUS» интернет-магазин мебели</div>
+					<div class="text1-3">Карта сайта</div>  
+					<div class="text1-4">Сделано в <span class="spanred">DLRG</span></div> 
+				</div>
+				<div class="text2">  
+					<div class="text2-2">© 2017, «FICTITIOUS» интернет-магазин мебели</div>
+					<div class="text2-3">Карта сайта</div>  
+					<div class="text2-4">Сделано в <span class="spanright-1">DLRG</span></div> 
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="btnup">
+		<i class="fas fa-chevron-up"></i>
+		<span>Вверх</span>
+	</div>
+
+	<script type="text/javascript" src="scripts/sliders.js"></script>
+	<script type="text/javascript" src="scripts/hitSellers.js"></script>
+	<script type="text/javascript" src="scripts/btnUp.js"></script>
+	<script type="text/javascript" src="scripts/btnBasket.js"></script>
+	<script type="text/javascript" src="scripts/popup.js"></script>
+	<script type="text/javascript" src="scripts/menu.js"></script>
+</body>
+</html>
